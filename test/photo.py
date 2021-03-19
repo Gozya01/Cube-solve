@@ -6,7 +6,7 @@ import random
 
 #first
 #彩色图转灰度图
-imgobj = cv2.imread('E:\gitstudy\gitstudy\cube_solve\\test_photo\IMG_20210211_161807.jpg')
+imgobj = cv2.imread('t2.jpg')
 gray = cv2.cvtColor(imgobj, cv2.COLOR_BGR2GRAY)
 #cv2.imwrite("2.jpg", gray)
 

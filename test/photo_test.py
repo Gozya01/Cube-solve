@@ -3,7 +3,7 @@ import numpy as np
 import math 
 import random
 
-img=cv2.imread('11.jpg')
+img=cv2.imread('t2.jpg')
 def Check(a):
     h=a[0]
     s=a[1]
@@ -31,6 +31,7 @@ def Check(a):
 #颜色识别 块
 def Judge(b):
     b=cv2.cvtColor(b,cv2.COLOR_BGR2HSV)
+    cv2.imwrite('ex1.jpg',b)
     lst=[0 for i in range(0,7)]
     l=b.shape[0]
     ll=b.shape[1]
@@ -47,6 +48,7 @@ def Judge(b):
     ans=0
     id=0
     for i in range(0,6):
+        print(i,lst[i])
         if lst[i]>ans:
             ans=lst[i]
             id=i

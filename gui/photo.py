@@ -54,7 +54,6 @@ for num in range(1,7):
         if 100<=h<=124 and 43<=s<=255 and 46<=v<=255:
             return 5
             return 'b'
-        
         return 6
     #颜色识别 块
     def Judge(b):
